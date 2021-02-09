@@ -228,3 +228,32 @@
 //     (параметр number) и возвращает сумму всех целых чисел от единицы
 // и до этого числа.Например, если number равно 3, то сумма это 1 + 2 + 3,
 //     то есть 6.
+// function calculateTotal(number) {
+//   // Пиши код ниже этой строки
+//   let total = 0;
+// for (let i =1; i <= number; i+= 1){
+//  total = total + i; 
+// }
+// return total
+//   // Пиши код выше этой строки
+// }
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Пиши код ниже этой строки
+  
+// for(let i=0; i<= order[i]; i+=1){
+// total = total + order[i];}
+  
+//   // Пиши код выше этой строки
+//   return total;
+// }
+//  Задача 22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Пиши код ниже этой строки
+// for (var i = min; i <= max; i++) {
+//     numbers.push(i);
+// }
+//   // Пиши код выше этой строки
+//   return numbers;
+// }
