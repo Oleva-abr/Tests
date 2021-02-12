@@ -750,3 +750,61 @@
   
 //   // Пиши код выше этой строки
 // }
+
+
+
+// Задача 19
+// Напиши функцию getAllPropValues(propName) которая принимает один
+// параметр propName - имя(ключ) свойства.Функция должна вернуть массив
+// всех значений свойства с таким именем из каждого объекта в массиве products.
+// в объектах нет свойства с таким именем, функция должна вернуть пустой
+// массив.
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Пиши код ниже этой строки
+//   const array = [];
+  
+//   for(const product of products){
+//     if (product.hasOwnProperty(propName)){
+//       array.push(product[propName])
+//     }
+     
+//   }
+  
+  
+//   return array
+//   // Пиши код выше этой строки
+// }
+
+
+
+// Задача 20
+// Напиши функцию calculateTotalPrice(productName)
+// которая принимает один параметр productName - название товара.
+// Функция должна вернуть общую стоимость(цена * количество) товара с
+// таким именем из массива products.
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 9 },
+// ];
+ 
+// function calculateTotalPrice(productName) {
+//   // Пиши код ниже этой строки
+//   let totalPrice = 0;
+// for(const product of products){
+//   if(product.name === productName){
+// totalPrice= product.price * product.quantity
+//   }
+//   }
+
+// return totalPrice;
+//   // Пиши код выше этой строки
+// }
