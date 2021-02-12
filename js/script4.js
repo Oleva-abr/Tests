@@ -617,3 +617,107 @@
 //   values.push(apartment[key]);}
 //   // Пиши код выше этой строки
 // }
+
+
+// Задача 12
+// Напиши функцию countProps(object), которая считает и возвращает
+// количество собственных свойств объекта в параметре object.
+// Используй переменную propCount для хранения количества свойств объекта.
+
+// function countProps(object) {
+//   let propCount = 0;
+//   // Пиши код ниже этой строки
+//   for ( const key in object){ 
+//   if (object.hasOwnProperty(key)){
+//   propCount += 1;}
+    
+//   }
+//   // Пиши код выше этой строки
+//   return propCount;
+// }
+
+
+// Задача 13
+// Перебери объект apartment используя метод Object.keys() и цикл for...of.
+// Запиши в переменную keys массив ключей собственных свойств
+// объекта apartment, и добавь в массив values все значения его свойств.
+
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+
+
+// for (const key of keys) {
+// values.push(apartment[key]);
+
+// }
+
+
+// Задача 14
+// function countProps(object) {
+//   // Пиши код ниже этой строки
+//   let propCount = 0;
+// const keys = Object.keys(object);
+//   for (const key of keys) {
+    
+//       propCount += 1;
+    
+//   }
+
+//   return propCount;
+//   // Пиши код выше этой строки
+// }
+
+// Задача 15
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+
+// Задача 16
+// Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат,
+// де имя свойства это имя сотрудника, а значение свойства это зарплата.Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её.
+// Используй переменную totalSalary для хранения общей суммы зарплаты.
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Пиши код ниже этой строки
+// const keys = Object.keys(salaries);
+  
+//  for (const key of keys) {
+   
+// totalSalary += salaries[key];}
+//   // Пиши код выше этой строки
+//   return totalSalary;
+// }
+
+
+
+// Задача 17
+// Перебери массив объектов colors используя цикл for...of.Добавь в массив hexColors значения свойств hex,
+//     в массив rgbColors значения свойств rgb из всех объектов массива colors.
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+// for(const color of colors){
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
