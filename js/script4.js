@@ -923,3 +923,109 @@
 //   hexColors.push(hex);
 //   rgbColors.push(rgb);
 //  }
+
+
+// Задача 25
+// Мы получили прогноз погоды на два дня,
+//     с минимальными и максимальными температурами,
+//     а также необязательными иконками.Замени объявления всех
+// переменных одной операцией деструктуризации свойств объекта forecast.
+// Задай значение по умолчанию для иконок, переменных todayIcon и
+// tomorrowIcon - строку 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'.
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Пиши код ниже этой строки
+
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Пиши код ниже этой строки
+
+// const { today: {high: highToday, low: lowToday, icon:todayIcon='https://www.flaticon.com/svg/static/icons/svg/861/861059.svg'},
+//     tomorrow: {high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon=
+//                'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'}} = forecast;
+
+
+
+// Задача 26
+// Функция calculateMeanTemperature(forecast) принимает один параметр forecast
+//     - объект температур на два дня следующего формата.
+
+//     // Пиши код ниже этой строки
+// function calculateMeanTemperature(forecast) {
+//   const todayLow = forecast.today.low;
+//   const todayHigh = forecast.today.high;
+//   const tomorrowLow = forecast.tomorrow.low;
+//   const tomorrowHigh = forecast.tomorrow.high;
+
+//   // Пиши код выше этой строки
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// // Пиши код ниже этой строки
+// function calculateMeanTemperature(forecast) {
+//   const{today: { low: todayLow, high: todayHigh },
+//   tomorrow: { low: tomorrowLow, high: tomorrowHigh}}= forecast;
+ 
+
+//   // Пиши код выше этой строки
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+
+// Задача 26
+// В переменной scores хранится массив результатов тестирования.
+// Используя распыление и методы Math.max() и Math.min()
+// дополни код так, чтобы в переменной bestScore был самый высокий балл,
+//     а в worstScore самый низкий.
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Пиши код ниже этой строки
+// const bestScore = (Math.max(...scores));
+// const worstScore = (Math.min(...scores)); ;
+
+
+
+// Задача 27
+// В переменных firstGroupScores, secondGroupScores
+// и thirdGroupScores хранятся результаты тестирования отдельных групп.
+// Используя распыление дополни код так, чтобы:
+
+// В переменной allScores хранился массив всех результатов
+// от первой до третьей группы.
+// В переменной bestScore был самый высокий общий балл.
+// В переменной worstScore был самый низкий общий балл.
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Пиши код ниже этой строки
+// const allScores = [...firstGroupScores,...secondGroupScores,...thirdGroupScores];
+// const bestScore = (Math.max(...allScores));
+// const worstScore = (Math.min(...allScores));
