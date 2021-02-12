@@ -808,3 +808,118 @@
 // return totalPrice;
 //   // Пиши код выше этой строки
 // }
+
+
+
+
+// Задача 21
+// Пришел трёхдневный прогноз максимальных температур и мы считаем
+// среднюю температуру за три дня(meanTemperature).Замени объявления
+// переменных yesterday, today и tomorrow одной операцией деструктуризации
+// свойств объекта highTemperatures.
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const yesterday = highTemperatures.yesterday;
+// const today = highTemperatures.today;
+// const tomorrow = highTemperatures.tomorrow;
+
+// // Пиши код выше этой строки
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+// After
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const{yesterday,today,tomorrow} = highTemperatures;
+// // Пиши код выше этой строки
+// const meanTemperature = (yesterday + today + tomorrow)
+
+
+// Задача 22
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const {yesterday, today, tomorrow,icon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'} = highTemperatures
+
+
+// // Пиши код выше этой строки
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+
+
+
+// Задача 23
+// амени объявления переменных highYesterday, highToday,
+//     highTomorrow и highIcon одной операцией деструктуризации
+// свойств объекта highTemperatures.Задай значение по умолчанию
+// для highIcon - строку
+// 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'.
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Пиши код ниже этой строки
+
+// const {yesterday:highYesterday  ,
+// today: highToday,
+// tomorrow:highTomorrow,
+// icon: highIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'} = highTemperatures;
+
+// // Пиши код выше этой строки
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+
+
+// Задача 24
+// Выполни рефакторинг цикла for...of так,
+//     чтобы в нём использовалась деструктуризация объекта..
+//     const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+
+//  for (const {hex, rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+//  }
