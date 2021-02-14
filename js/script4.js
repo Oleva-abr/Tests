@@ -1077,3 +1077,69 @@
 //     Тогда, в новом объекте задачи, в свойствах category и
 // priority должны быть значения по умолчанию, хранящиеся в
 // одноимённых локальных переменных.
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'Общее';
+//   const priority = 'Обычный';
+//   // Пиши код ниже этой строки
+// const unitedData = {completed: false, category: 'Общее', priority : 'Обычный', ...data};
+//   const unitedData;
+//   // Пиши код выше этой строки
+// }
+
+
+
+// Задача 31
+// Используя операцию rest дополни код функции add() так,
+//     чтобы она принимала любое количество аргументов,
+//     считала и возвращала их сумму.
+
+//  function add(...args) {
+
+//  let result =0;
+//    for (let i = 0; i < args.length; i++) {
+//      result += arguments[i];
+//   }
+
+//    return result;}
+
+
+
+// function add(...args) {
+//  let sum = 0;
+//  for (const arg of args) {
+//    sum += arg;
+//  }
+//  return sum;
+
+// // Пиши код ниже этой строки
+// function add(...args) {
+//   let Sum =0;
+//   for (const arg  of args){
+  
+//   Sum += arg;}
+//   return Sum;
+//   // Пиши код выше этой строки
+// }
+
+
+// Задача 32
+// Функция addOverNum() считает сумму всех аргументов.Измени параметры и
+// тело функции addOverNum() так,
+//     чтобы она считала сумму только тех аргументов,
+//         которые больше чем заданное число.Это число должно быть первым параметром функции.
+
+// Пиши код ниже этой строки
+
+// function addOverNum(firstArg,...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if(arg>firstArg){
+//     total += arg;}
+//   }
+
+//   return total;
+//   // Пиши код выше этой строки
+// }
