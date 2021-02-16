@@ -305,3 +305,50 @@
 // // Почта poly@hotmail.de удалена из рассылки.
 
 // console.log(service.mailingList); // ['mango@mail.com', 'ajax@jmail.net', 'kiwi@mail.uk']
+
+
+
+
+
+// MODULE 5
+// Задача 1
+// Измени код так, чтобы объект parent стал прототипом для объекта в переменной сhild.
+// const parent = {
+//   name: 'Stacey',
+//   surname: 'Moore',
+//   age: 54,
+//   heritage: 'Irish'
+// };
+// // Пиши код ниже этой строки
+
+// const child = Object.create(parent);
+
+// // Пиши код выше этой строки
+// child.name = 'Jason';
+// child.age = 27;
+
+
+
+// Задача 2
+// Измени код, построив цепочку прототипов так,
+//     чтобы объект ancestor был прототипом для parent,
+//         а тот в свою очередь был прототипом для child.
+
+// const ancestor = {
+//   name: 'Paul',
+//   age: 83,
+//   surname: 'Dawson',
+//   heritage: 'Irish'
+// };
+// // Пиши код ниже этой строки
+
+// const parent = Object.create(ancestor);
+// parent.name = 'Stacey';
+// parent.surname = 'Moore';
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = 'Jason';
+// child.age = 27;
+
+// Пиши код выше этой строки
