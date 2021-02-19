@@ -938,3 +938,15 @@
 // console.log(mango.blacklistedEmails); // 'poly@mail.com'
 // console.log(mango.isBlacklisted('mango@mail.com')); //  false
 // console.log(mango.isBlacklisted('poly@mail.com')); // true 
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Пиши код ниже этой строки
+
+//   orderedItems.forEach (function (item, index) {
+//     totalPrice += item;
+//   });
+
+//   // Пиши код выше этой строки
+//   return totalPrice;
+// }
