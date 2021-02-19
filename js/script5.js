@@ -932,6 +932,16 @@
 //   accessLevel: Admin.AccessLevel.SUPERUSER
 // });
 
+
+
+// MODULE6
+// Задача 1.
+// Функция calculateTotalPrice(orderedItems) принимает
+// один параметр orderedItems - массив чисел, и рассчитывает общую сумму его элементов,
+//     которая сохраняется в переменной totalPrice и возвращается как результат работы функции.
+
+// Выполни рефакторинг функции так,
+//     чтобы вместо цикла for она использовала метод forEach.
 // console.log(mango.email); // mango@mail.com
 // console.log(mango.accessLevel); // superuser
 // mango.blacklist('poly@mail.com');
@@ -950,3 +960,132 @@
 //   // Пиши код выше этой строки
 //   return totalPrice;
 // }
+
+
+
+
+
+// Задача 2
+// Функция filterArray(numbers, value) принимает массив
+// чисел numbers и возвращает новый массив, в котором будут только те элементы оригинального массива,
+//     которые больше чем значение параметра value.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+// function filterArray(numbers, value) {
+//     const filteredNumbers = [];
+//     // Пиши код ниже этой строки
+  
+//     numbers.forEach (function(number) {
+//       if (number > value) {
+//         filteredNumbers.push(number);
+//       }
+//     });
+  
+//     // Пиши код выше этой строки
+//     return filteredNumbers;
+//   }
+
+
+
+
+// Задача 3
+// Функция getCommonElements(firstArray, secondArray) принимает два массива
+// произвольной длины в параметры firstArray и secondArray, и возвращает новый массив
+// их общих элементов, то есть тех которые есть в обоих массивах.
+
+// Выполни рефакторинг функции так, чтобы вместо цикла for она использовала метод forEach.
+
+// function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//     // Пиши код ниже этой строки
+  
+//     firstArray.forEach (function (number) {
+//       if (secondArray.includes(number)) {
+//         commonElements.push(number);
+//       }
+//     });
+  
+//     return commonElements;
+//     // Пиши код выше этой строки
+//   }
+
+// Задача 4
+// Выполни рефакторинг функции calculateTotalPrice() так, чтобы она была объявлена как стрелочная.
+// Пиши код ниже этой строки
+
+// const calculateTotalPrice=(quantity, pricePerItem)=> {
+//   // Пиши код выше этой строки
+//   return quantity * pricePerItem;
+// }
+
+
+
+
+// -----------------------------------------------------------------------------------------
+//     Задача из практики корзина товаров
+//           const bag = {
+//     products: [],
+//     prKey: 0,
+// ​
+//     createProduct: function(name, price, description) {
+//         if (!this.validDataProduct({name, price, description})) return false;
+// ​
+//         return {name, price, description};
+//     },
+// ​
+//     validDataProduct: ({name, price, description}) => {
+//         if (typeof name  !== 'string'  || 
+//             typeof price !== 'number'  || 
+//             typeof description !== 'string') return false;
+// ​
+//         return true;
+//     },
+// ​
+//     del: function (id) {
+//         if (typeof id !== "number") return false;
+// ​
+//         let indexP = this.getIndexProduct(id);
+//         if (indexP === false) return false;
+// ​
+//         this.products.splice(indexP, 1);        
+//     },
+// ​
+//     getIndexProduct: function (id) {
+//         for (const [index, item] of Object.entries(this.products) )
+//             if (item.id === id) return index;
+// ​
+//         return false;
+//     },
+// ​
+//     add: function (product) {
+//         if (typeof product !== 'object' || !this.validDataProduct(product)) return false;
+// ​
+//         product.id = ++this.prKey;
+// ​
+//         this.products.push(product);
+//     },
+// ​
+//     update: function (id, data = {}) {
+//         if (typeof data !== 'object') return false;
+// ​
+//         let indexP = this.getIndexProduct(id);
+//         if (indexP === false) return false;
+// ​
+//         const product = this.products[indexP];
+//         for (const index in data) {
+//             if (typeof product[index] === typeof data[index])
+//                 product[index] = data[index];
+//         }
+//     }
+// };
+// ​
+// bag.add(bag.createProduct('test', 5, 'test test'));
+// bag.update(1, {name: 'кухонный нож', price: 10});
+// bag.del(1);
+// ​
+// console.log(bag.products);
+// -----------------------------------------------------------------------------------------------
+
+// Задача 5
+// Выполни рефакторинг функции calculateTotalPrice() так, чтобы она использовала неявный возврат.

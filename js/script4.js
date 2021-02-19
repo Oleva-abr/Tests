@@ -903,7 +903,7 @@
 // const rgbColors = [];
 // // Пиши код ниже этой строки
 
-// for (const color of colors) {
+// for (const color of colors) {     //for (const {hex,rgb}} of colors) {
 //   hexColors.push(color.hex);
 //   rgbColors.push(color.rgb);
 // }
