@@ -1421,3 +1421,17 @@
 // // Пиши код ниже этой строки
 // const getUsersWithFriend = (users, friendName) =>users.filter((user)=>user.friends.includes(friendName));
 // // Пиши код выше этой строки
+
+
+// Задача 21
+// Дополни функцию getFriends(users) так, чтобы она возвращала массив друзей всех
+// пользователей(свойство friends).У нескольких пользователей могут быть одинаковые друзья,
+//   сделай так чтобы возвращаемый массив не содержал повторений.
+
+// // Пиши код ниже этой строки
+// const getFriends = (users) => {
+//   const allFriends =users.flatMap(user => user.friends); 
+//   const uniqFriends =allFriends.filter((friend,index,array)=>array.indexOf(friend) === index);
+//   return uniqFriends;
+// };
+// // Пиши код выше этой строки
