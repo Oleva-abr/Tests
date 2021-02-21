@@ -1395,7 +1395,29 @@
 // у которых цвет
 // глаз(свойство eyeColor) совпадает со значением параметра color.
 
-// Пиши код ниже этой строки
+// // Пиши код ниже этой строки
+// const getUsersWithEyeColor = (users, color) => users.filter((user)=>user.eyeColor===color);
+ 
+// // Пиши код выше этой строки
 
-const getUsersWithEyeColor = users.filter((user,color)=>user.eyeColor===color);
-// Пиши код выше этой строки
+
+
+// Задача 19
+// Дополни функцию getUsersWithAge(users, minAge, maxAge) так, чтобы она возвращала массив пользователей,
+//   возраст которых(свойство age) попадает в промежуток от minAge до maxAge.
+
+// // Пиши код ниже этой строки
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter((user)=>user.age>=minAge && user.age<=maxAge);
+// // Пиши код выше этой строки
+
+
+
+
+//  Задача 20
+// Дополни функцию getUsersWithFriend(users, friendName) так, чтобы она возвращала массив
+// пользователей у которых есть друг с
+// именем в параметре friendName.Массив друзей пользователя хранится в свойстве friends.
+
+// // Пиши код ниже этой строки
+// const getUsersWithFriend = (users, friendName) =>users.filter((user)=>user.friends.includes(friendName));
+// // Пиши код выше этой строки
