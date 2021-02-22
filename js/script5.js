@@ -1703,3 +1703,50 @@
 // const sortedByAscendingRating = [...books].sort((a,b)=>a.rating-b.rating);
 
 // const sortedByDescentingRating = [...books].sort((a,b)=>b.rating-a.rating);
+
+
+// Задача 38
+// Дополни функцию sortByAscendingBalance(users) так,
+//     чтобы она возвращала массив пользователей отсортированный по возрастанию их баланса(свойство balance).
+// Пиши код ниже этой строки
+// const sortByAscendingBalance = users =>[...users].sort((a,b)=>a.balance-b.balance);
+// Пиши код выше этой строки
+
+
+// Задача 39
+// Дополни функцию sortByDescendingFriendCount(users) так, чтобы она возвращала массив пользователей
+// отсортированный по убыванию количества их друзей(свойство friends).
+
+// Пиши код ниже этой строки
+// const sortByDescendingFriendCount = users => [...users].sort((a,b)=>b.friends.length-a.friends.length);
+// Пиши код выше этой строки
+
+
+// Задача 40
+// Дополни функцию sortByName(users) так, чтобы она возвращала массив пользователей отсортированный
+// по их имени(свойство name) в алфавитном порядке.
+
+// Пиши код ниже этой строки
+// const sortByName = users => [...users].sort((a,b)=>a.name.localeCompare(b.name));
+// Пиши код выше этой строки
+
+
+
+// Задача 41
+// Дополни код так, чтобы в переменной names получился массив имён авторов в
+// алфавитном порядке, рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
+
+const books = [
+  { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+  { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+  { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+  { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+  { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+];
+const MIN_BOOK_RATING = 8;
+// Пиши код ниже этой строки
+
+const names = [...books]
+.flatMap((book) => book.author)
+.filter((book)=>book.rating>MIN_BOOK_RATING)
+.sort((a, b) => a.author.localeCompare(b.author));
