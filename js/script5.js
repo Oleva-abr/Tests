@@ -1490,3 +1490,216 @@
 // const getUserWithEmail = (users, email) =>users.find((user)=>user.email===email);
 // // Пиши код выше этой строки
 
+
+
+//  Задача 26
+// Используя метод every() дополни код так, чтобы:
+
+// В переменной eachElementInFirstIsEven был результат проверки всех элементов массива
+// firstArray на чётность.
+// В переменной eachElementInFirstIsOdd был результат проверки всех элементов массива
+// firstArray на нечётность.
+// В переменной eachElementInSecondIsEven был результат проверки всех элементов массива
+// secondArray на чётность.
+// В переменной eachElementInSecondIsOdd был результат проверки всех элементов массива
+// secondArray на нечётность.
+// В переменной eachElementInThirdIsEven был результат проверки всех элементов
+// массива thirdArray на чётность.
+// В переменной eachElementInThirdIsOdd был результат проверки всех элементов массива
+// thirdArray на нечётность.
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every((element)=>element%2===0);
+// const eachElementInFirstIsOdd = firstArray.every((element)=>element%2!==0);
+
+// const eachElementInSecondIsEven = secondArray.every((element)=>element%2===0);
+// const eachElementInSecondIsOdd = secondArray.every((element)=>element%2!==0);
+
+// const eachElementInThirdIsEven = thirdArray.every((element)=>element%2===0);
+// const eachElementInThirdIsOdd = thirdArray.every((element)=>element%2!==0);
+
+
+// Задача 27
+// Дополни функцию isEveryUserActive(users) так, чтобы она проверяла все ли пользователи
+// сейчас активны(свойство isActive) и возвращала true или false.
+// // Пиши код ниже этой строки
+// const isEveryUserActive = (users) => users.every(user => user.isActive);
+   
+
+// // Пиши код выше этой строки
+
+
+// Задача 28
+// Используя метод some() дополни код так, чтобы:
+
+// В переменной anyElementInFirstIsEven был результат проверки наличия чётных элементов в массиве firstArray.
+// В переменной anyElementInFirstIsOdd был результат проверки наличия нечётных элементов в массиве firstArray.
+// В переменной anyElementInSecondIsEven был результат проверки наличия чётных элементов в массиве secondArray.
+// В переменной anyElementInSecondIsOdd был результат проверки наличия нечётных элементов в массиве secondArray.
+// В переменной anyElementInThirdIsEven был результат проверки наличия чётных элементов в массиве thirdArray.
+// В переменной anyElementInThirdIsOdd был результат проверки наличия нечётных элементов в массиве thirdArray.
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some((element)=>element%2===0);
+// const anyElementInFirstIsOdd = firstArray.some((element) => element%2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some((element) => element%2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((element) => element%2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some((element) => element%2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((element) => element%2 !== 0);
+
+
+// Задача 29
+// Дополни функцию isAnyUserActive(users) так, чтобы она проверяла наличие активных пользователей
+//     (свойство isActive)
+// и возвращала true или false.
+// Пиши код ниже этой строки
+// const isAnyUserActive = (users) => users.some((user)=>user.isActive);
+// Пиши код выше этой строки
+
+// Задача 30
+// Игровому сервису необходим функционал подсчёта среднего времени проведённого в играх.Дополни код так,
+//     чтобы в переменной totalPlayTime получилось общее игровое время из массива playtimes.
+
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((acc,value)=>{return acc+value},0);
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+
+// Задача 31
+// Нашему сервису необходимо рассчитать среднее время проведённое в одной игре для каждого игрока, и получить общую сумму этих времен
+// Рассчитать время для каждого из игроков, можно разделив его время(свойство playtime) на количество игр(свойство gamesPlayed).
+
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((acc,player)=>{return acc+player.playtime/player.gamesPlayed;},0);
+	
+
+// Задача 32
+// Дополни функцию calculateTotalBalance(users) так, чтобы она считала и возвращала сумму всех средств
+//     (свойство balance) которые хранят пользователи из массива users.
+
+// Пиши код ниже этой строки
+// const calculateTotalBalance = users => users.reduce((acc,user)=>{return acc+user.balance},0);
+// Пиши код выше этой строки
+
+
+// Задача 33
+// Дополни функцию getTotalFriendCount(users) так, чтобы она считала и возвращала общее количество
+// друзей(свойство friends) всех пользователей из массива users.
+
+
+
+// Пиши код ниже этой строки
+// const getTotalFriendCount = users => 
+//   users.reduce((acc,user)=>{return acc+user.friends.length},0); 
+
+// Пиши код выше этой строки
+
+
+// Задача 34
+// Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная по возрастанию копия массива
+// releaseDates, а в переменной alphabeticalAuthors копия массива имён авторов authors отсортированная в по алфавиту.
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+
+// Задача 35
+// Онлайн бибилиотеке необходимо отображать книги сортированные по дате издания,
+//     по её возрастанию или убыванию.Дополни код так, чтобы в переменной ascendingReleaseDates
+// получилась отсортированная по возрастанию копия массива releaseDates, а в переменной descendingReleaseDates
+// копия отсортированная по убыванию.
+
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort((a,b)=>a-b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a,b)=>b-a);
+
+
+// Задача 36
+// Онлайн бибилиотеке необходимо отображать книги отсортированные по автору,
+//     в алфавитном и обратном алфавитном порядке.Дополни код так, чтобы в переменной
+// authorsInAlphabetOrder получилась отсортированная по алфавиту копия массива authors,
+//     а в переменной authorsInReversedOrder копия отсортированная в обратном алфавитном порядке.
+
+
+// const authors = [
+//     'Ли Танит',
+//     'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+//   // Пиши код ниже этой строки
+  
+//   const authorsInAlphabetOrder = [...authors].sort((a,b)=> a.localeCompare(b));
+  
+//   const authorsInReversedOrder = [...authors].sort((a,b)=> b.localeCompare(a));
+
+
+// Задача 37
+// Дополни код так, чтобы:
+
+// В переменной sortedByAuthorName получился массив книг отсортированный по имени автора
+// в алфавитном порядке.
+// В переменной sortedByReversedAuthorName получился массив книг отсортированный
+// по имени автора в обратном алфавитном порядке.
+// В переменной sortedByAscendingRating получился массив книг отсортированный по возрастанию рейтинга.
+// // В переменной sortedByDescentingRating получился массив книг отсортированный по убыванию рейтинга.
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+// // Пиши код ниже этой строки
+
+// const sortedByAuthorName = [...books].sort((a,b)=>a.author.localeCompare(b.author));
+
+// const sortedByReversedAuthorName = [...books].sort((a,b)=>b.author.localeCompare(a.author));;
+
+// const sortedByAscendingRating = [...books].sort((a,b)=>a.rating-b.rating);
+
+// const sortedByDescentingRating = [...books].sort((a,b)=>b.rating-a.rating);
