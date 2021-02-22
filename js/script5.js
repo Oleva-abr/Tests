@@ -1134,13 +1134,13 @@
 // Пиши код ниже этой строки
 // const getCommonElements =(firstArray, secondArray)=> {
 //     const commonElements = [];
-  
+
 //     firstArray.forEach( (element)=> {
 //       if (secondArray.includes(element)) {
 //         commonElements.push(element);
 //       }
 //     });
-  
+
 //     // Пиши код выше этой строки
 //     return commonElements;
 //   }
@@ -1159,7 +1159,7 @@
 //   numbers.forEach (element =>{
 //       if (element % 2 === 0) {
 //        element += value;
-        
+
 //       }
 //     array.push(element);
 //     });
@@ -1188,7 +1188,7 @@
 //     { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const titles = books.map(book=>book.title);
 
 
@@ -1214,7 +1214,7 @@
 //     }
 //   ];
 //   // Пиши код ниже этой строки
-  
+
 //   const genres = books.flatMap((book)=>book.genres);
 
 // Задача 13
@@ -1302,9 +1302,9 @@
 // ];
 // // Пиши код ниже этой строки
 // const getUserNames = users =>users.map(user =>  user.name);  
-  
 
-  
+
+
 //   // Пиши код выше этой строки
 
 
@@ -1316,9 +1316,9 @@
 // из массива объектов в параметре users.
 // // Пиши код ниже этой строки
 // const getUserEmails = users => users.map(user =>  user.email);  
-    
 
-  
+
+
 //   // Пиши код выше этой строки
 
 
@@ -1397,7 +1397,7 @@
 
 // // Пиши код ниже этой строки
 // const getUsersWithEyeColor = (users, color) => users.filter((user)=>user.eyeColor===color);
- 
+
 // // Пиши код выше этой строки
 
 
@@ -1435,3 +1435,58 @@
 //   return uniqFriends;
 // };
 // // Пиши код выше этой строки
+
+
+
+// Задача 22
+// Дополни функцию getActiveUsers(users) так, чтобы она
+// возвращала массив активных пользователей, значение свойства isActive которых true.
+// // Пиши код ниже этой строки
+// const getActiveUsers = (users) =>users.filter(user => user.isActive);
+
+// // Пиши код выше этой строки
+
+
+// Задача 23
+// Дополни функцию getInactiveUsers(users) так,
+//   чтобы она возвращала массив неактивных пользователей, значение свойства isActive которых false.
+
+// // Пиши код ниже этой строки
+// const getInactiveUsers = (users)  =>users.filter(user => !user.isActive);
+// // Пиши код выше этой строки
+
+
+
+
+// Задача 24
+// Используя метод find() дополни код так, чтобы:
+
+// В переменной bookWithTitle получился объект книги название которой (свойство title)
+//  совпадает со значением переменной BOOK_TITLE.
+// В переменной bookByAuthor получился объект книги автор который
+//  (свойство author) совпадает со значением переменной AUTHOR.
+
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
+
+// const bookWithTitle = books.find((book)=>book.title===BOOK_TITLE);
+// const bookByAuthor = books.find((book)=>book.author===AUTHOR);
+
+
+
+// Задача 25
+// Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект пользователя,
+//     почта которого(свойство email) совпадает со значением параметра email.
+
+// // Пиши код ниже этой строки
+// const getUserWithEmail = (users, email) =>users.find((user)=>user.email===email);
+// // Пиши код выше этой строки
+
