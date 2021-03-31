@@ -17,24 +17,20 @@
 // checkPassword('polyhax');
 // checkPassword('jqueryismyjam');
 
-
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   // Пиши код ниже этой строки
- 
 
 //   if (password === ADMIN_PASSWORD) {
 //     return 'Добро пожаловать!';
-//   } 
-   
+//   }
+
 //   return 'Доступ запрещен, неверный пароль!';
 //   // Пиши код выше этой строки
 // }
 // checkPassword('mangohackzor');
 // checkPassword('polyhax');
 // checkPassword('jqueryismyjam');
-
-
 
 // Задача 3
 // function checkStorage(available, ordered) {
@@ -59,17 +55,15 @@
 // checkStorage(200, 250);
 // checkStorage(150, 0);
 
-
 // function checkStorage(available, ordered) {
 //   // Пиши код ниже этой строки
- 
 
 //   if (ordered === 0) {
 //     return 'В заказе еще нет товаров';
-//   } 
+//   }
 //  if (ordered > available) {
 //     return 'Слишком большой заказ, на складе недостаточно товаров!';
- 
+
 //   }
 //    return 'Заказ оформлен, с вами свяжется менеджер';
 // }
@@ -79,7 +73,6 @@
 // checkStorage(200, 20);
 // checkStorage(200, 250);
 // checkStorage(150, 0);
-
 
 // Задача 4
 // // Пиши код ниже этой строки
@@ -113,8 +106,6 @@
 // const lastElementIndex = fruits.length - 1;
 // const lastElement = fruits[lastElementIndex]
 
-
-
 // Задача 9
 // Напиши функцию getExtremeElements(array) которая принимает один параметр array
 //   - массив элементов произвольной длины.
@@ -125,13 +116,11 @@
 //     const deleteArray =array.splice(1, array.length -2);
 // return array
 
-
 //     // Пиши код выше этой строки
 //   }
 // getExtremeElements([1, 2, 3, 4, 5]);
 // getExtremeElements(['Земля', 'Марс', 'Венера']);
 // getExtremeElements(['яблоко', 'персик', 'груша', 'банан']);
-
 
 // Задача 10
 // Дополни код функции splitMessage(message, delimeter) так, чтобы она возвращала
@@ -139,17 +128,15 @@
 // function splitMessage(message, delimeter) {
 //   let words;
 //   // Пиши код ниже этой строки
-  
+
 //   words = message.split(delimeter)
-  
+
 //   // Пиши код выше этой строки
 //   return words;
 // }
 // splitMessage('Манго спешит на поезд', ' ');
 // splitMessage('Манго', '');
 // splitMessage('лучшее_за_неделю', '_');
-
-
 
 // Задача про высокосный год
 // Високосный год.Просто и без изысков.
@@ -172,7 +159,7 @@
 // Задача 13
 // function slugify(title) {
 //   // Пиши код ниже этой строки
- 
+
 // const array = title.toLowerCase();
 //    const word = array.split(' ');
 //   const slug = word.join('-')
@@ -191,7 +178,6 @@
 // const nonExtremeEls = fruits.slice(1,4);
 // const lastThreeEls = fruits.slice(-3);
 
-
 // // Задача 15
 // const oldClients = ['Манго', 'Аякс', 'Поли', 'Киви'];
 // const newClients = ['Персик', 'Хьюстон'];
@@ -204,9 +190,8 @@
 
 //   const array = firstArray.concat(secondArray);
 //   const newArray = array.slice(0, maxLength)
-//   return newArray 
+//   return newArray
 
-    
 //     // Пиши код выше этой строки
 //   }
 
@@ -232,7 +217,7 @@
 //   // Пиши код ниже этой строки
 //   let total = 0;
 // for (let i =1; i <= number; i+= 1){
-//  total = total + i; 
+//  total = total + i;
 // }
 // return total
 //   // Пиши код выше этой строки
@@ -240,10 +225,10 @@
 // function calculateTotalPrice(order) {
 //   let total = 0;
 //   // Пиши код ниже этой строки
-  
+
 // for(let i=0; i<= order[i]; i+=1){
 // total = total + order[i];}
-  
+
 //   // Пиши код выше этой строки
 //   return total;
 // }
@@ -271,7 +256,7 @@
 // return NewArray;
 // } - Не рабочая версия
 
-// Рабочая версия 23 
+// Рабочая версия 23
 // function filterArray(numbers, value) {
 //  let filteredNumbers = [];
 // for(const number of numbers) {
@@ -280,7 +265,7 @@
 //  }
 // }
 // return filteredNumbers;
-// } (edited) 
+// } (edited)
 
 // Задача 24
 // function checkFruit(fruit) {
@@ -288,7 +273,6 @@
 
 //   return fruits.includes(fruit); // Дополни эту строку
 // }
- 
 
 // Задача 25
 
@@ -307,10 +291,9 @@
 //     newArray.push(array1[i])}
 //   }
 // return newArray;
-  
+
 //   // Пиши код выше этой строки
 // }
-
 
 // Задача 26
 // Выполни рефакторинг кода функции
@@ -326,7 +309,6 @@
 //   // Пиши код выше этой строки
 //   return total;
 // }
-
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
@@ -355,9 +337,6 @@
 //   // Пиши код выше этой строки
 // }
 
-
-
-
 // Задача 27
 // Выполни рефакторинг функции
 // filterArray(numbers, value) заменив цикл for на for...of.
@@ -382,7 +361,7 @@
 // const b = 4 % 3;
 // const c = 11 % 4;
 // const d = 12 % 7;
-// const e = 8 % 3; 
+// const e = 8 % 3;
 
 // Задача 29
 // function getEvenNumbers(start, end) {
@@ -393,7 +372,7 @@
 //   i+=array[i];}}
 //   return array;
 //     // Пиши код выше этой строки
-  
+
 //   }
 
 // Задача 32
@@ -403,12 +382,11 @@
 //   for (let i= 0; i<= array.length; i+=1){
 //   if (value === array[i]){return true;}
 //   }
-  
+
 // return false;
-  
+
 //   // Пиши код выше этой строки
 // }
-
 
 // Module 3
 // Задача1
@@ -426,14 +404,12 @@
 //     rating: 4,
 //     price: 2153,
 //     tags: ['premium', 'promoted', 'top'],
-  
+
 //     owner:{
 //         name: 'Генри',
 //     phone: '982-126-1588',
 //     email: 'henry.carter@aptmail.com',
 //     },}  ;
-
-
 
 // // Задача3
 // const apartment = {
@@ -443,7 +419,7 @@
 //     price: 2153,
 //     tags: ['premium', 'promoted', 'top'],
 //   };
-  
+
 //   // Пиши код ниже этой строки
 //   const aptRating = apartment.rating;
 //   const aptDescr = apartment.descr;
@@ -474,7 +450,6 @@
 // const lastTag = apartment.tags[2];
 // // Пиши код выше этой строки
 
-
 // // Задача 5
 // const apartment = {
 //   imgUrl: 'https://via.placeholder.com/640x480',
@@ -490,7 +465,6 @@
 // const aptPrice = apartment['price'];
 // const aptTags = apartment['tags'];
 // // Пиши код выше этой строки
-
 
 //  Задача 6
 // const apartment = {
@@ -531,7 +505,6 @@
 // apartment.rooms = 3;
 // apartment.location ={country:'Ямайка',city: 'Кингстон'};
 
-
 // Задача 8
 // const name = 'Ремонтный дроид';
 // const price = 2500;
@@ -556,8 +529,7 @@
 //   // Пиши код ниже этой строки
 //   [emailInputName]: 'henry.carter@aptmail.com',
 //    [passwordInputName]: 'jqueryismyjam'
-  
-  
+
 //   // Пиши код выше этой строки
 // };
 
@@ -573,7 +545,6 @@
 // for ( const key in apartment) {
 //   keys.push(key);
 // values.push(apartment[key]);}
-
 
 // Задача 11
 // Выполни рефакторинг
@@ -611,13 +582,11 @@
 // for (const key in apartment) {
 //   // Пиши код ниже этой строки
 
-  
 // if ( apartment.hasOwnProperty(key)){
 // keys.push(key);
 //   values.push(apartment[key]);}
 //   // Пиши код выше этой строки
 // }
-
 
 // Задача 12
 // Напиши функцию countProps(object), которая считает и возвращает
@@ -627,15 +596,14 @@
 // function countProps(object) {
 //   let propCount = 0;
 //   // Пиши код ниже этой строки
-//   for ( const key in object){ 
+//   for ( const key in object){
 //   if (object.hasOwnProperty(key)){
 //   propCount += 1;}
-    
+
 //   }
 //   // Пиши код выше этой строки
 //   return propCount;
 // }
-
 
 // Задача 13
 // Перебери объект apartment используя метод Object.keys() и цикл for...of.
@@ -651,12 +619,10 @@
 // // Пиши код ниже этой строки
 // const keys = Object.keys(apartment);
 
-
 // for (const key of keys) {
 // values.push(apartment[key]);
 
 // }
-
 
 // Задача 14
 // function countProps(object) {
@@ -664,9 +630,9 @@
 //   let propCount = 0;
 // const keys = Object.keys(object);
 //   for (const key of keys) {
-    
+
 //       propCount += 1;
-    
+
 //   }
 
 //   return propCount;
@@ -683,7 +649,6 @@
 // const keys = Object.keys(apartment);
 // const values = Object.values(apartment);
 
-
 // Задача 16
 // Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат,
 // де имя свойства это имя сотрудника, а значение свойства это зарплата.Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её.
@@ -693,15 +658,13 @@
 //   let totalSalary = 0;
 //   // Пиши код ниже этой строки
 // const keys = Object.keys(salaries);
-  
+
 //  for (const key of keys) {
-   
+
 // totalSalary += salaries[key];}
 //   // Пиши код выше этой строки
 //   return totalSalary;
 // }
-
-
 
 // Задача 17
 // Перебери массив объектов colors используя цикл for...of.Добавь в массив hexColors значения свойств hex,
@@ -722,7 +685,6 @@
 //   rgbColors.push(color.rgb);
 // }
 
-
 // Задача 18
 // Напиши функцию getProductPrice(productName) которая принимает
 // один параметр productName - название продукта.Функция ищет объект
@@ -739,19 +701,16 @@
 
 // function getProductPrice(productName) {
 //   // Пиши код ниже этой строки
-  
-  
+
 //   for( const product of products){
 //   if (product.name === productName){
 //   return product.price;}
 //   }
-  
+
 //   return null;
-  
+
 //   // Пиши код выше этой строки
 // }
-
-
 
 // Задача 19
 // Напиши функцию getAllPropValues(propName) которая принимает один
@@ -769,20 +728,17 @@
 // function getAllPropValues(propName) {
 //   // Пиши код ниже этой строки
 //   const array = [];
-  
+
 //   for(const product of products){
 //     if (product.hasOwnProperty(propName)){
 //       array.push(product[propName])
 //     }
-     
+
 //   }
-  
-  
+
 //   return array
 //   // Пиши код выше этой строки
 // }
-
-
 
 // Задача 20
 // Напиши функцию calculateTotalPrice(productName)
@@ -795,7 +751,7 @@
 //   { name: 'Дроид', price: 400, quantity: 7 },
 //   { name: 'Захват', price: 1200, quantity: 9 },
 // ];
- 
+
 // function calculateTotalPrice(productName) {
 //   // Пиши код ниже этой строки
 //   let totalPrice = 0;
@@ -808,9 +764,6 @@
 // return totalPrice;
 //   // Пиши код выше этой строки
 // }
-
-
-
 
 // Задача 21
 // Пришел трёхдневный прогноз максимальных температур и мы считаем
@@ -832,7 +785,6 @@
 // // Пиши код выше этой строки
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 
-
 // After
 // const highTemperatures = {
 //   yesterday: 28,
@@ -845,7 +797,6 @@
 // // Пиши код выше этой строки
 // const meanTemperature = (yesterday + today + tomorrow)
 
-
 // Задача 22
 // const highTemperatures = {
 //   yesterday: 28,
@@ -856,13 +807,8 @@
 
 // const {yesterday, today, tomorrow,icon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'} = highTemperatures
 
-
 // // Пиши код выше этой строки
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
-
-
-
-
 
 // Задача 23
 // амени объявления переменных highYesterday, highToday,
@@ -885,9 +831,6 @@
 
 // // Пиши код выше этой строки
 // const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
-
-
-
 
 // Задача 24
 // Выполни рефакторинг цикла for...of так,
@@ -923,7 +866,6 @@
 //   hexColors.push(hex);
 //   rgbColors.push(rgb);
 //  }
-
 
 // Задача 25
 // Мы получили прогноз погоды на два дня,
@@ -971,8 +913,6 @@
 //     tomorrow: {high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon=
 //                'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'}} = forecast;
 
-
-
 // Задача 26
 // Функция calculateMeanTemperature(forecast) принимает один параметр forecast
 //     - объект температур на два дня следующего формата.
@@ -992,12 +932,10 @@
 // function calculateMeanTemperature(forecast) {
 //   const{today: { low: todayLow, high: todayHigh },
 //   tomorrow: { low: tomorrowLow, high: tomorrowHigh}}= forecast;
- 
 
 //   // Пиши код выше этой строки
 //   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 // }
-
 
 // Задача 26
 // В переменной scores хранится массив результатов тестирования.
@@ -1009,8 +947,6 @@
 // // Пиши код ниже этой строки
 // const bestScore = (Math.max(...scores));
 // const worstScore = (Math.min(...scores)); ;
-
-
 
 // Задача 27
 // В переменных firstGroupScores, secondGroupScores
@@ -1058,8 +994,6 @@
 // // Пиши код ниже этой строки
 // const finalSettings = {...defaultSettings,...overrideSettings};
 
-
-
 // Задача 30
 // Напиши функцию makeTask(data) которая принимает
 // один параметр data - объект со следующими свойствами.
@@ -1088,8 +1022,6 @@
 //   // Пиши код выше этой строки
 // }
 
-
-
 // Задача 31
 // Используя операцию rest дополни код функции add() так,
 //     чтобы она принимала любое количество аргументов,
@@ -1104,8 +1036,6 @@
 
 //    return result;}
 
-
-
 // function add(...args) {
 //  let sum = 0;
 //  for (const arg of args) {
@@ -1117,12 +1047,11 @@
 // function add(...args) {
 //   let Sum =0;
 //   for (const arg  of args){
-  
+
 //   Sum += arg;}
 //   return Sum;
 //   // Пиши код выше этой строки
 // }
-
 
 // Задача 32
 // Функция addOverNum() считает сумму всех аргументов.Измени параметры и
@@ -1144,7 +1073,6 @@
 //   // Пиши код выше этой строки
 // }
 
-
 // Задача 33
 // Функция findMatches() принимает произвольное количество аргументов.
 // Первым аргументом всегда будет массив чисел,
@@ -1158,7 +1086,6 @@
 // должна вернуть массив[1, 2], потому что только они есть
 // в массиве первого аргумента.
 
-
 // Пиши код ниже этой строки
 // Пиши код ниже этой строки
 // function findMatches() {
@@ -1167,8 +1094,6 @@
 //   // Пиши код выше этой строки
 //   return matches;
 // }
-
-
 
 // // Пиши код ниже этой строки
 // function findMatches(arr,...args) {
@@ -1180,7 +1105,6 @@
 //   // Пиши код выше этой строки
 //   return matches;
 // }
-
 
 // Задача 34
 // Добавь объекту bookShelf ещё два метода,
@@ -1212,7 +1136,7 @@
 //   updateBook(oldName, newName) {
 //   return `Обновляем книгу ${oldName} на ${newName}`;
 //   }
-  
+
 //   // Пиши код выше этой строки
 // };
 // const bookShelf = {
@@ -1224,8 +1148,6 @@
 // 	    // Пиши код выше этой строки
 //   },
 // };
-
-
 
 // Задача 36
 // К нам обратилась владелица лавки зелий
@@ -1254,10 +1176,6 @@
 //   // Пиши код выше этой строки
 // };
 
-
-
-
-
 // Задача 38
 // Дополни метод addPotion(potionName) так, чтобы он добавлял
 // зелье potionName в конец массива зелий в свойстве potions.
@@ -1265,9 +1183,9 @@
 //   potions: ['Зелье скорости', 'Дыхание дракона', 'Каменная кожа'],
 //   addPotion(potionName) {
 //     // Пиши код ниже этой строки
-      
+
 //     this.potions.push(potionName);
- 
+
 //     // Пиши код выше этой строки
 //   },
 // };
@@ -1299,7 +1217,6 @@
 //     // Пиши код выше этой строки
 //   },
 // };
-
 
 // Задача 41
 // Заказчица хочет чтобы каждое зелье было представлено не
@@ -1337,20 +1254,32 @@
 //     this.potions.push(newPotion);
 //   },
 //   removePotion(newPotion) {
-   
+
 // 	for(let i=0; i<this.potions.length; i+=1){
 //      if(this.potions[i].name === newPotion){this.potions.splice(i, 1);} }
-  
-      
+
 //     },
-  
+
 //   updatePotionName(oldName, newName) {
-    
+
 //     for(let i=0; i<this.potions.length; i+=1){ if(this.potions[i].name === oldName){
 //       this.potions[i].name = newName;
 //     }}
- 
+
 //   },
 //   // Пиши код выше этой строки
 // };
 
+function makePizza(pizzaName, callback) {
+  console.log(`Пицца ${pizzaName} готовится, ожидайте...`)
+  callback(pizzaName)
+}
+
+makePizza('Роял гранд', function deliverPizza(pizzaName) {
+  console.log(`Доставляем пиццу ${pizzaName}.`)
+})
+// Пиши код ниже этой строки
+
+makePizza('Ультрасыр', function eatPizza(pizzaName) {
+  console.log(`Едим пиццу ${pizzaName}.`)
+})
